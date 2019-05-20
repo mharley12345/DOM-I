@@ -21,9 +21,9 @@ const siteContent = {
     "middle-img-src": "img/mid-page-accent.jpg",
     "services-h4":"Services",        
     "services-content": "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
-    "product-h4":"Product",                              
+    "product-h4":"Product",                                  
     "product-content": "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
-    "vision-h4":"Vision",                           
+    "vision-h4":"Vision",                                    
     "vision-content": "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
   },                      
   "contact": {
@@ -42,13 +42,32 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])                    
                                                                            
 let ctaImg = document.getElementById("cta-img");                           
-ctaImg.setAttribute('src',siteContent["cta"]["img-src"])            
-                                                                    
-let middleImg = document.getElementById("middle-img")               
+ctaImg.setAttribute('src',siteContent["cta"]["img-src"])                   
+                                                                       
+let middleImg = document.getElementById("middle-img")                  
 middleImg.setAttribute('src',siteContent["main-content"]["middle-img-src"])
+                                                                       
+let navBar = document.getElementsByTagName("a");                
+navBar[0].textContent="Services";                        
+navBar[1].textContent="Product" ;                       
+navBar[2].textContent="Vision";                        
+navBar[3].textContent="Features";                             
+navBar[4].textContent="About";                        
+navBar[5].textContent="Contact";                      
+                                                      
+let mainHeading = document.querySelector("h1")        
+mainHeading.textContent="Dom " + " Is" + " Great";    
+                                                     
+let button1 = document.querySelector("button")      
+button1.textContent="Get Started";                  
+button1.style.borderColor="black";                 
+                                                  
+                                                 
+                                                             
+                                                                     
+                                                                    
+                                                                   
+                                                                  
+                                                                  
                                                                  
                                                                 
-                                                                
-                                                               
-                                                              
-                                                             
