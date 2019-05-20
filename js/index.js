@@ -87,7 +87,7 @@ button1.textContent="Get Started";
 button1.style.borderColor="black";                                        
 button1.style.backgroundColor="red";                                                                                                                                                                                                           
                                                                                                                                                                                                                                                          
-let topContenth4 = document.querySelector("h4")                                                                                                                                                                                                   
+let topContenth4 = document.getElementsByTagName("h4")                                                                                                                                                                                                   
 topContenth4[0].textContent="Features";                                                                                                                                                                                                                  
 topContenth4[1].textContent="About";                                                                                                                                                                                                                     
 topContenth4[2].textContent="Services";                                                                         
@@ -101,7 +101,7 @@ topContentP[1].textContent="About content elementum magna eros, ac posuere elvit
 topContentP[2].textContent="Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."              
 topContentP[3].textContent="Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis"               
 topContentP[4].textContent="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."                                     
-topContentP[5].textContent="123 Way 456 Street Somewhere, USA"            
+topContentP[5].innerHTML="123 Way 456 Street <br> Somewhere, USA"            
 topContentP[6].textContent="1 (888) 888-8888";                            
 topContentP[7].textContent="sales@greatidea.io";                          
 topContentP[8].textContent="Copyright Great Idea! 2018"                                                                                                               
