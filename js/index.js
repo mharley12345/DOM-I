@@ -23,23 +23,32 @@ const siteContent = {
     "services-content": "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "product-h4":"Product",                              
     "product-content": "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
-    "vision-h4":"Vision",              
+    "vision-h4":"Vision",                           
     "vision-content": "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
   },                      
   "contact": {
     "contact-h4" : "Contact",        
-    "address" : "123 Way 456 Street Somewhere, USA",
-    "phone" : "1 (888) 888-8888",                       
+    "address" : "123 Way 456 Street Somewhere, USA",           
+    "phone" : "1 (888) 888-8888",                             
     "email" : "sales@greatidea.io",                          
   },                                                         
   "footer": {                                                 
     "copyright" : "Copyright Great Idea! 2018"                
   },                                                                     
-};                                                                       
+};                                                                          
+                                                                            
+// Example: Update the img src for the logo                                 
+let logo = document.getElementById("logo-img");                             
+logo.setAttribute('src', siteContent["nav"]["img-src"])                    
+                                                                           
+let ctaImg = document.getElementById("cta-img");                           
+ctaImg.setAttribute('src',siteContent["cta"]["img-src"])            
                                                                     
-// Example: Update the img src for the logo                         
-// let logo = document.getElementById("logo-img");             
-// logo.setAttribute('src', siteContent["nav"]["img-src"])    
-                   
-                                                           
-                                                 
+let middleImg = document.getElementById("middle-img")               
+middleImg.setAttribute('src',siteContent["main-content"]["middle-img-src"])
+                                                                 
+                                                                
+                                                                
+                                                               
+                                                              
+                                                             
