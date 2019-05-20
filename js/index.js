@@ -50,28 +50,29 @@ middleImg.setAttribute('src',siteContent["main-content"]["middle-img-src"])
 let navBar = document.querySelectorAll("a");                
 navBar[0].textContent="Services";                        
 navBar[1].textContent="Product" ;                       
-navBar[2].textContent="Vision";                            
+navBar[2].textContent="Vision";                                              
 navBar[3].textContent="Features";                                                        
 navBar[4].textContent="About";                                                         
-navBar[5].textContent="Contact";                                                      
-navBar[1].style.color="green";                                                     
-navBar[2].style.color="green";                                                    
-navBar[3].style.color="green";                                                   
-navBar[4].style.color="green";                                                  
-navBar[5].style.color="green";                                                 
-navBar[0].style.color="green";                                                
+navBar[5].textContent="Contact";                
+navBar.forEach(item => item.style.color='green')                                                     
+// navBar[1].style.color="green";                                                     
+// navBar[2].style.color="green";                                                    
+// navBar[3].style.color="green";                                                   
+// navBar[4].style.color="green";                                                  
+// navBar[5].style.color="green";                                                 
+// navBar[0].style.color="green";                                                
                                                                              
 let newItems = document.querySelector(".container header nav")
-let newItem = document.createElement("a");
-newItem.innerText = "My New Item 1";
-newItem.style.color = "green";     
-newItem.href = "#";                
-newItems.prepend(newItem);         
-                                   
-let newItem1 = document.createElement("a");
-newItem1.innerText = "My New Item 2";
-newItem1.style.color = "green";    
-newItem1.href = "#";               
+let newItem = document.createElement("a");          
+newItem.innerText = "My New Item 1";                
+newItem.style.color = "green";                      
+newItem.href = "#";                         
+newItems.prepend(newItem);                  
+                                            
+let newItem1 = document.createElement("a"); 
+newItem1.innerText = "My New Item 2";        
+newItem1.style.color = "green";                     
+newItem1.href = "#";                         
 newItems.appendChild(newItem1);               
                                                      
                                                     
@@ -79,18 +80,20 @@ newItems.appendChild(newItem1);
                                                                           
                                                                           
 let mainHeading = document.querySelector("h1")                           
-mainHeading.textContent="DOM Is Awesome";                                
+mainHeading.innerHTML="DOM <br> Is <br> Awesome";                                
                                                                         
 let button1 = document.querySelector("button")                         
 button1.textContent="Get Started";                                     
-button1.style.borderColor="black";                                                                                                                                                                                                           
+button1.style.borderColor="black";                                        
+button1.style.backgroundColor="red";                                                                                                                                                                                                           
                                                                                                                                                                                                                                                          
-let topContenth4 = document.getElementsByTagName("h4")                                                                                                                                                                                                   
+let topContenth4 = document.querySelector("h4")                                                                                                                                                                                                   
 topContenth4[0].textContent="Features";                                                                                                                                                                                                                  
 topContenth4[1].textContent="About";                                                                                                                                                                                                                     
 topContenth4[2].textContent="Services";                                                                         
 topContenth4[3].textContent="Products";                                                                        
-topContenth4[4].textContent="Vision";                                                                         
+topContenth4[4].textContent="Vision";                                     
+                                                                          
                                                                                                                                    
 let topContentP = document.getElementsByTagName("p");                                                             
 topContentP[0].textContent="Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
@@ -98,12 +101,12 @@ topContentP[1].textContent="About content elementum magna eros, ac posuere elvit
 topContentP[2].textContent="Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."              
 topContentP[3].textContent="Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis"               
 topContentP[4].textContent="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."                                     
-topContentP[5].textContent="123 Way 456 Street Somewhere, USA"
-topContentP[6].textContent="1 (888) 888-8888";       
-topContentP[7].textContent="sales@greatidea.io";    
+topContentP[5].textContent="123 Way 456 Street Somewhere, USA"            
+topContentP[6].textContent="1 (888) 888-8888";                            
+topContentP[7].textContent="sales@greatidea.io";                          
 topContentP[8].textContent="Copyright Great Idea! 2018"                                                                                                               
 let contact1 = document.querySelectorAll(".contact,h4")                                                  
-contact1[6].textContent= "Contact";                                     
+contact1[6].textContent= "Contact";                                       
                                                                                          
                                                                                                               
                                                                                                              
