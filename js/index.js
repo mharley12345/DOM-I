@@ -61,11 +61,20 @@ navBar[4].style.color="green";
 navBar[5].style.color="green";                                                 
 navBar[0].style.color="green";                                                
                                                                              
-let navBarNew= document.getElementsByTagName('nav');  
-s   
-console.log(navBarNew)                                
+let newItems = document.querySelector(".container header nav")
+let newItem = document.createElement("a");
+newItem.innerText = "My New Item 1";
+newItem.style.color = "green";     
+newItem.href = "#";                
+newItems.prepend(newItem);         
+                                   
+let newItem1 = document.createElement("a");
+newItem1.innerText = "My New Item 2";
+newItem1.style.color = "green";    
+newItem1.href = "#";               
+newItems.appendChild(newItem1);               
+                                                     
                                                     
-                                                   
                                                                            
                                                                           
                                                                           
