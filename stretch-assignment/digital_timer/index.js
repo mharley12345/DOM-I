@@ -15,7 +15,7 @@ function start(){
         time[4].textContent="0";
 
         const timerInterval = window.setInterval(()=>{
-            ms +=10;
+            ms += 10;
             if(ms === 10000){
                 endTimer(timerInterval)
 
@@ -31,9 +31,7 @@ function start(){
  }
  function endTimer(intervalId){
      clearInterval(intervalId);
-     Array.from(timer.children).forEach(time=>
-        {time.classList.add('redDigit')})
- }
+  }
 
 function updateTimer(ms){
     if(ms === 10000){
