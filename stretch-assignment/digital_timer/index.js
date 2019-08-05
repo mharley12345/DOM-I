@@ -39,6 +39,12 @@ function updateTimer(ms){
         time[1].textContent="0";
         time[3].textContent="0";
         time[4].textContent="0";
+        time[0].style.color="red";
+        time[1].style.color="red";
+        time[2].style.color="red"
+        time[3].style.color="red";
+        time[4].style.color="red";
+       
     }else if(ms % 1000 === 0){
         time[1].textContent=increment(time[1].textContent);
         time[3].textContent="0";
