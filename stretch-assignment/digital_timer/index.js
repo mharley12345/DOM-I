@@ -1,2 +1,5 @@
-const timer = document.querySelectorAll('.digits')
-console.log(timer)
+const timer = document.getElementsByClassName('digit')
+const secondTens = timer.secondTens
+
+
+console.log(secondTens)
