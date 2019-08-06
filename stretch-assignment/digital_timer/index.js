@@ -15,14 +15,14 @@ function start(){
         time[4].textContent="0";
 
         const timerInterval = window.setInterval(()=>{
-            ms += 10;
-            if(ms === 10000){
+            ms += 100; //10
+            if(ms === 10000){ 
                 endTimer(timerInterval)
 
             }
             updateTimer(ms);
         
-        },10);
+        },100);//10
     }
 }
  function increment (string){
